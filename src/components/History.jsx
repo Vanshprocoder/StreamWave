@@ -14,7 +14,7 @@ const History = () => {
 
     const fetchHistory = async () => {
       try {
-        const res = await fetch(`https://signup-form-10f8e-default-rtdb.firebaseio.com/WatchHistory/${username}.json`);
+        const res = await fetch(`${process.env.REACT_APP_FIREBASE_DB_URL}/WatchHistory/${username}.json`);
 
         if (!res.ok) {
           throw new Error('Failed to fetch watch history');
@@ -48,7 +48,7 @@ const History = () => {
 
     // Update Firebase with the latest history
     try {
-      const res = await fetch(`https://signup-form-10f8e-default-rtdb.firebaseio.com/WatchHistory/${username}.json`, {
+      const res = await fetch(`${process.env.REACT_APP_FIREBASE_DB_URL}/WatchHistory/${username}.json`, {
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(newHistory) // Save the updated history without duplicates
