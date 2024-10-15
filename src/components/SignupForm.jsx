@@ -20,6 +20,7 @@ const SignupForm = () => {
     e.preventDefault();
     const { name, dob, phone, email, password, confirmPassword } = formData;
 
+    // Check if passwords match
     if (password !== confirmPassword) {
       alert('Passwords do not match');
       return;
@@ -40,10 +41,7 @@ const SignupForm = () => {
     };
 
     try {
-      const res = await fetch(
-        const res = await fetch(`${process.env.REACT_APP_FIREBASE_DB_URL}/UserData.json`,
-        options
-      );
+      const res = await fetch(`${process.env.REACT_APP_FIREBASE_DB_URL}/UserData.json`, options);
       if (res.ok) {
         alert('Signup successful');
       } else {
