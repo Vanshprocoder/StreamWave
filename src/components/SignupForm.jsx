@@ -41,7 +41,7 @@ const SignupForm = () => {
 
     try {
       const res = await fetch(
-        'https://signup-form-10f8e-default-rtdb.firebaseio.com/UserData.json',
+        const res = await fetch(`${process.env.REACT_APP_FIREBASE_DB_URL}/UserData.json`,
         options
       );
       if (res.ok) {
@@ -63,7 +63,6 @@ const SignupForm = () => {
         alignItems: 'center',
         justifyContent: 'center',
         height: '100vh',
-        background: 'url(path_to_your_background_image.jpg) no-repeat center center fixed',
         backgroundSize: 'cover',
       }}
     >
