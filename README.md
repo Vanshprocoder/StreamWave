@@ -1,70 +1,79 @@
-# Getting Started with Create React App
+**Video Streaming App** 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a YouTube clone built using React.js for the frontend and Firebase Realtime Database for data storage. The app allows users to browse videos, view watch history, and more.
 
-## Available Scripts
+**Table of Contents** 
 
-In the project directory, you can run:
+Features
 
-### `npm start`
+Demo
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Getting Started
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Installation
 
-### `npm test`
+Firebase Setup
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Usage
 
-### `npm run build`
+Contributing
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+License
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+**Features**
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+User signup and login
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Watch videos and save watch history
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Display recently played videos
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Responsive design
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+**Demo**
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+A live demo of the app will be available after deployment.
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+**Getting Started**
 
-### Analyzing the Bundle Size
+To get a local copy up and running, follow these steps:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+**Prerequisites**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+You’ll need the following software installed on your machine:
 
-### Advanced Configuration
+Node.js (v14 or above)
+npm (Node Package Manager)
+Git
+Firebase (for backend database)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+**Installation**
+Clone the repository:
 
-### Deployment
+git clone https://github.com/Vanshprocoder/StreamWave.git
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+**Navigate to the project directory:**
 
-### `npm run build` fails to minify
+cd StreamWave
+Install the required dependencies:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+npm install
+
+**Firebase Setup**
+Create a Firebase project if you don’t have one already.
+
+Add a Realtime Database to your Firebase project and set the rules to public for testing purposes
+
+Add .env to your .gitignore to prevent it from being pushed to GitHub
+
+Run the project locally:
+open terminal
+npm start
+
+Open your browser and navigate to:
+http://localhost:3000
