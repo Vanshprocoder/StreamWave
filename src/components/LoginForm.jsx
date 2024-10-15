@@ -20,7 +20,7 @@ const LoginForm = () => {
 
     try {
       // Fetch all users from Firebase Realtime Database
-      const response = await fetch('https://signup-form-10f8e-default-rtdb.firebaseio.com/UserData.json');
+      const response = await fetch(`${process.env.REACT_APP_FIREBASE_DB_URL}/UserData.json`);
       const data = await response.json();
 
       // Check if username exists and password matches
