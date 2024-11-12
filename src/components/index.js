@@ -11,3 +11,4 @@ export {default as ChannelCard} from './ChannelCard';
 export {default as LoginForm} from './LoginForm';
 export {default as SignupForm} from './SignupForm';
 export {default as History} from './History';
+export {default as BackgroundAudioHandler} from './BackgroundAudioHandler';
